@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone | Discover Best Restaurants & Cuisines Near You</title>
+    <meta name="description" content="Discover the best restaurants, cuisines, and food offers near you with Zomato Clone. Find top-rated places to eat and explore new dishes.">
+    
+    <!-- Open Graph Meta Tags for better social sharing -->
+    <meta property="og:title" content="Zomato Clone | Discover Best Restaurants & Cuisines Near You">
+    <meta property="og:description" content="Explore top-rated restaurants and cuisines with our Zomato Clone. Find great food and offers around you.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://example.com/">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Zomato Clone",
+          "description": "Discover top restaurants, cuisines, and food offers near you.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Zomato Clone",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://example.com/logo.png"
+            }
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Zomato</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cuisines.html">Cuisines</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="sign_in.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover the Best Food Near You</h2>
+            <p>Explore top-rated restaurants, dishes, and new cuisines in your area. Find the best food near you with just a click!</p>
+            <div class="cta-buttons">
+                <a href="sign_in.html" class="cta-button">Join Now</a>
+                <a href="cuisines.html" class="cta-button">Explore Cuisines</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for restaurants, cuisines, or dishes" id="search-input">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants Section -->
+    <section class="restaurant-listings fade-in">
+        <h2>Top Restaurants Near You</h2>
+        <div class="restaurants">
+            <div class="restaurant" id="restaurant1">
+                <img src="https://b.zmtcdn.com/data/pictures/6/19533966/7a843140e3f0b544c4484bc591ba3524.jpg?fit=around|750:500&crop=750:500;*,*" alt="La Dolce Vita Restaurant - Italian, Pizza" title="La Dolce Vita - Italian Pizza">
+                <h3><a href="res1.html">La Dolce Vita</a></h3>
+                <p>Italian, Pizza</p>
+                <p>Rating: 4.5/5</p>
+            </div>
+            <div class="restaurant" id="restaurant2">
+                <img src="https://b.zmtcdn.com/data/pictures/1/2781/0501311cef9120b77aad767f9c55b5f9.jpeg?fit=around|750:500&crop=750:500;*,*" alt="Desi Delights Restaurant - Indian, Curry" title="Desi Delights - Indian Curry">
+                <h3><a href="res2.html">Desi Delights</a></h3>
+                <p>Indian, Curry</p>
+                <p>Rating: 4.2/5</p>
+            </div>
+            <div class="restaurant" id="restaurant3">
+                <img src="https://b.zmtcdn.com/data/pictures/1/18372281/ca9fb29f52dba12e5b7eea480e886167.png?fit=around|750:500&crop=750:500;*,*" alt="Dragon's Den Restaurant - Chinese, Noodles" title="Dragon's Den - Chinese Noodles">
+                <h3><a href="res3.html">Dragon's Den</a></h3>
+                <p>Chinese, Noodles</p>
+                <p>Rating: 4.7/5</p>
+            </div>
+            <div class="restaurant" id="restaurant3">
+                <img src="https://b.zmtcdn.com/data/pictures/4/57424/c541f177ed51a85be0d8164fb8163002.jpg?fit=around|750:500&crop=750:500;*,*" alt="Casa De Tacos Restaurant - Mexican, Tacos" title="Casa De Tacos - Mexican Tacos">
+                <h3><a href="res4.html">Casa de Tacos</a></h3>
+                <p>Mexican, Tacos</p>
+                <p>Rating: 4.5/5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews fade-in">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Amazing experience! The food was delicious and the service was top-notch. Highly recommend!"</p>
+                <p><strong>John Doe</strong> - 5/5</p>
+            </div>
+            <div class="testimonial">
+                <p>"The variety of cuisines is fantastic, and I love the user-friendly interface. Great app!"</p>
+                <p><strong>Jane Smith</strong> - 4.8/5</p>
+            </div>
+            <div class="testimonial">
+                <p>"I always find the best places to eat near me. Zomato never disappoints!"</p>
+                <p><strong>Michael Lee</strong> - 4.9/5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Zomato Clone. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

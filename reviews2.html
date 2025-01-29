@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Zomato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Zomato</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu2.html">Menu</a></li>
+                <li><a href="reviews2.html" class="active">Reviews</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="sort-options">
+            <label for="sort-reviews">Sort by:</label>
+            <select id="sort-reviews">
+                <option value="highest">Highest Rating</option>
+                <option value="lowest">Lowest Rating</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+
+        <!-- Review Carousel -->
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p><strong>Alice Johnson:</strong> "Best Butter Chicken I've had in a while! Definitely worth the price."</p>
+                <p>Rating: 5/5</p>
+            </div>
+            <div class="testimonial">
+                <p><strong>Michael Brown:</strong> "The Paneer Tikka was good, but the service could have been better."</p>
+                <p>Rating: 3/5</p>
+            </div>
+        </div>
+
+        <!-- Submit a Review -->
+        <div class="submit-review">
+            <h3>Submit Your Review</h3>
+            <form action="submit_review.php" method="POST">
+                <label for="reviewer-name">Your Name</label>
+                <input type="text" id="reviewer-name" name="reviewer-name" required placeholder="Your Name">
+
+                <label for="review-text">Review</label>
+                <textarea id="review-text" name="review-text" rows="5" required placeholder="Your Review"></textarea>
+
+                <label for="rating">Rating</label>
+                <div class="star-rating">
+                    <input type="radio" name="rating" value="1" id="star-1"><label for="star-1">★</label>
+                    <input type="radio" name="rating" value="2" id="star-2"><label for="star-2">★</label>
+                    <input type="radio" name="rating" value="3" id="star-3"><label for="star-3">★</label>
+                    <input type="radio" name="rating" value="4" id="star-4"><label for="star-4">★</label>
+                    <input type="radio" name="rating" value="5" id="star-5"><label for="star-5">★</label>
+                </div>
+
+                <button type="submit" class="cta-button">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Zomato Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
